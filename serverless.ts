@@ -63,7 +63,7 @@ const serverlessConfiguration: AWS = {
         Type: "AWS::DynamoDB::Table",
         Properties: {
           TableName: "users_certificate",
-          ProvisionedThoughput: {
+          ProvisionedThroughput: {
             ReadCapacityUnits: 5,
             WriteCapacityUnits: 5,
           },
