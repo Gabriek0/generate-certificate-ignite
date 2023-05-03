@@ -74,6 +74,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
     headless: chromium.headless,
     defaultViewport: chromium.defaultViewport,
     executablePath: await chromium.executablePath,
+    userDataDir: "path-to-custom-temp-dir",
   });
 
   const page = await browser.newPage();
