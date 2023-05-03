@@ -71,10 +71,9 @@ export const handler: APIGatewayProxyHandler = async (event) => {
 
   const browser = await chromium.puppeteer.launch({
     args: chromium.args,
-    headless: chromium.headless,
     defaultViewport: chromium.defaultViewport,
     executablePath: await chromium.executablePath,
-    userDataDir: "path-to-custom-temp-dir",
+    // userDataDir: "path-to-custom-temp-dir",
   });
 
   const page = await browser.newPage();
