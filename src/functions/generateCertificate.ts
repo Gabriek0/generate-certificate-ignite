@@ -79,7 +79,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
     args: chromium.args,
     defaultViewport: chromium.defaultViewport,
     executablePath: await chromium.executablePath,
-    // userDataDir: "path-to-custom-temp-dir",
+    userDataDir: "/dev/null",
   });
 
   const page = await browser.newPage();
@@ -101,7 +101,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
     .putObject({
       Key: `${id}.pdf`,
       Bucket: "certificate-generator-student-ignite",
-      ACL: "public-read",
+      ACL: "public-read-write",
       Body: pdf,
       ContentType: "application/pdf",
     })
