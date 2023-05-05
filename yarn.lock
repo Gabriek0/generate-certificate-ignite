@@ -2187,6 +2187,11 @@ devtools-protocol@0.0.883894:
   resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.883894.tgz#d403f2c75cd6d71c916aee8dde9258da988a4da9"
   integrity sha512-33idhm54QJzf3Q7QofMgCvIVSd2o9H3kQPWaKT/fhoZh+digc+WSiMhbkeG3iN79WY4Hwr9G05NpbhEVrsOYAg==
 
+devtools-protocol@0.0.901419:
+  version "0.0.901419"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.901419.tgz#79b5459c48fe7e1c5563c02bd72f8fec3e0cebcd"
+  integrity sha512-4INMPwNm9XRpBukhNbF7OB6fNTTCaI8pzy/fXg0xQzAy5h3zL1P8xT3QazgKqBrb/hAYwIBizqDBZ7GtJE74QQ==
+
 dezalgo@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/dezalgo/-/dezalgo-1.0.4.tgz#751235260469084c132157dfa857f386d4c33d81"
@@ -4369,6 +4374,24 @@ puppeteer-core@10.1.0:
   dependencies:
     debug "4.3.1"
     devtools-protocol "0.0.883894"
+    extract-zip "2.0.1"
+    https-proxy-agent "5.0.0"
+    node-fetch "2.6.1"
+    pkg-dir "4.2.0"
+    progress "2.0.1"
+    proxy-from-env "1.1.0"
+    rimraf "3.0.2"
+    tar-fs "2.0.0"
+    unbzip2-stream "1.3.3"
+    ws "7.4.6"
+
+puppeteer@10:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-10.4.0.tgz#a6465ff97fda0576c4ac29601406f67e6fea3dc7"
+  integrity sha512-2cP8mBoqnu5gzAVpbZ0fRaobBWZM8GEUF4I1F6WbgHrKV/rz7SX8PG2wMymZgD0wo0UBlg2FBPNxlF/xlqW6+w==
+  dependencies:
+    debug "4.3.1"
+    devtools-protocol "0.0.901419"
     extract-zip "2.0.1"
     https-proxy-agent "5.0.0"
     node-fetch "2.6.1"
